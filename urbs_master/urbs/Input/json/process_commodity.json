@@ -1,0 +1,178 @@
+[
+    {
+        "support_timeframe": 2020,
+        "Process": "Wind park",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Wind park",
+        "Commodity": "Wind",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Photovoltaics",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Photovoltaics",
+        "Commodity": "Solar",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+	    {
+        "support_timeframe": 2020,
+        "Process": "Slack powerplant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Slack powerplant",
+        "Commodity": "Slack",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Slack neg",
+        "Commodity": "Elec",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Slack neg",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 0.0,
+        "ratio-min": NaN
+    }, 
+    {
+        "support_timeframe": 2020,
+        "Process": "Hydro plant",
+        "Commodity": "Hydro",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Hydro plant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    }, 
+    {
+        "support_timeframe": 2020,
+        "Process": "Gas plant",
+        "Commodity": "Gas",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Gas plant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 0.6,
+        "ratio-min": NaN
+    }, 
+    {
+        "support_timeframe": 2020,
+        "Process": "Coal plant",
+        "Commodity": "Coal",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Coal plant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 0.4,
+        "ratio-min": NaN
+    }, 
+    {
+        "support_timeframe": 2020,
+        "Process": "Lignite plant",
+        "Commodity": "Lignite",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Lignite plant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 0.4,
+        "ratio-min": NaN
+    },
+	{
+        "support_timeframe": 2020,
+        "Process": "Biomass plant",
+        "Commodity": "Biomass",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Biomass plant",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 0.35,
+        "ratio-min": NaN
+    }, 
+    {
+        "support_timeframe": 2020,
+        "Process": "Feed-in",
+        "Commodity": "Elec",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Feed-in",
+        "Commodity": "Elec sell",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+	{
+        "support_timeframe": 2020,
+        "Process": "Purchase",
+        "Commodity": "Elec buy",
+        "Direction": "In",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    },
+    {
+        "support_timeframe": 2020,
+        "Process": "Purchase",
+        "Commodity": "Elec",
+        "Direction": "Out",
+        "ratio": 1.0,
+        "ratio-min": NaN
+    }
+]
