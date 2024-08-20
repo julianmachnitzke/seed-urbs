@@ -26,17 +26,17 @@ urbs is a [linear programming](https://en.wikipedia.org/wiki/Linear_programming)
 
 ## Installation
 
-There are 2 ways to get all required packages under Windows. We recommend using the Python distribution Anaconda. If you don't want to use it or already have an existing Python (this repository was developed and tested for Python 3.8.5) installation, you can also download the required packages by yourself..
+There are 2 ways to get all required packages under Windows. We recommend using the Python distribution Anaconda. If you don't want to use it or already have an existing Python (this repository was developed and tested for Python 3.8.5) installation, you can also download the required packages by yourself.
 
 ### Anaconda/Miniconda (recommended)
 
   1. **[Anaconda (Python 3)](http://continuum.io/downloads)/[Miniconda](https://docs.conda.io/en/latest/miniconda.html)**. Choose the 64-bit installer if possible.
      During the installation procedure, keep both checkboxes "modify PATH" and "register Python" selected! If only higher Python versions are available, you can switch to a specific Python Version by typing `conda install python=<version>`
   2. **Packages and Solver**: [GLPK](http://winglpk.sourceforge.net/).
-     1. Download the [environment file](https://github.com/julianmachnitzke/seed-urbs/seed_urbs.yml).
+     1. Download the [environment file](https://github.com/julianmachnitzke/seed-urbs/blob/main/seed_urbs.yml).
      2. Launch a new command prompt (Windows: Win+R, type "cmd", Enter)
      3. Install it via conda by `conda env create -f seed_urbs.yml`.
-     4. Each time you open a new terminal for running urbs, you can activate the environment by `conda activate urbs`.
+     4. Each time you open a new terminal for running urbs, you can activate the environment by `conda activate seed-env`.
 
 
 ### Manually (the hard way)
@@ -46,14 +46,14 @@ For all packages, best take the release as given in the environment file. The li
 ## Get started
 
 To launch the website, once all required packages are installed, the user can navigate to the folder where the website is saved by typing `cd \path\to\your\folder`. Once redirected to the correct folder the website can be launched by typing `python app.py` into the anaconda console.
-The website is now running on a local host. In a browser the website can hence be accessed by navigating to 'http://127.0.0.1:5000'.
+The website is now running on a local host. In a browser, the website can hence be accessed by navigating to 'http://127.0.0.1:5000'. On the website the user can then select step-by-step the desired location, create an energy demand and select power plant types before running urbs.
 
 
 ## Next steps and tips
 
   1. Head over to the tutorial at http://urbs.readthedocs.io, which goes through runme.py step by step. This will also help to understand this website. 
   2. Read the source code of `runme.py` and `comp.py`. 
-  3. Try adding/modifying scenarios in `scenarios.py` and see their effect on results.
+  3. Try adding/modifying scenarios in `scenarios.py` and see their effect on results. Changing scenarios correctly, should not interfere with the correct functioning of this website.
   4. Read the source code of the `app.py` file. Here also changes e.g. in the creation of the potential hydro energy (lines 464 to 493) can be commited (for hydro also see [utils.py](https://github.com/julianmachnitzke/seed-urbs/blob/main/static/functions/utils.py) from line 101 onwards).
   
 ## Further reading
@@ -63,7 +63,7 @@ The website is now running on a local host. In a browser the website can hence b
     * The official [Python Tutorial](https://docs.python.org/3/tutorial/index.html) walks you through the language's basic features.
     * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/preface.html). It is meant for programming beginners.
   - The book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) best summarises the capabilities of the packages installed here. It starts with IPython, then adds NumPy, slowly fades to pandas and then shows first basic, then advanced data conversion and analysis recipes. Visualization with matplotlib is given its own chapter, both with and without pandas.
-  - For a huge buffet of appetizers showing the capabilities of Python for scientific computing, I recommend browsing this [gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks).
+  - For a huge buffet of appetizers showing the capabilities of Python for scientific computing, we recommend browsing this [gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks).
   
 
 
