@@ -45,21 +45,16 @@ For all packages, best take the release as given in the environment file. The li
   
 ## Get started
 
-To launch the website, once all required packages are installed, the user can navigate to the folder where the website is saved by typing 'cd \path\to\your\folder'. Once redirected to the correct folder the website can be launched by typing `python app.py` into the anaconda console.
+To launch the website, once all required packages are installed, the user can navigate to the folder where the website is saved by typing `cd \path\to\your\folder`. Once redirected to the correct folder the website can be launched by typing `python app.py` into the anaconda console.
 The website is now running on a local host. In a browser the website can hence be accessed by navigating to 'http://127.0.0.1:5000'.
-
-
-### Users
-
 
 
 ## Next steps and tips
 
-  1. Head over to the tutorial at http://urbs.readthedocs.io, which goes through runme.py step by step. 
+  1. Head over to the tutorial at http://urbs.readthedocs.io, which goes through runme.py step by step. This will also help to understand this website. 
   2. Read the source code of `runme.py` and `comp.py`. 
   3. Try adding/modifying scenarios in `scenarios.py` and see their effect on results.
-  4. If you need a nice python editor, think about using [PyCharm](https://www.jetbrains.com/pycharm/download). It has many features including easy Git integration, package management, etc.
-  5. Fire up IPython (`ipython3`) and run the scripts from there using the run command: `run runme` and `run comp`. Then use `whos` and inspect the workspace afterward (`whos``). See what you can do (analyses, plotting) with the DataFrames. Take the `urbs.get_constants`, `urbs.get_timeseries` and `urbs.plot` functions as inspiration and the [Pandas [docs](http://pandas.pydata.org/pandas-docs/stable/) as a reference.
+  4. Read the source code of the `app.py` file. Here also changes e.g. in the creation of the potential hydro energy (lines 464 to 493) can be commited (for hydro also see [utils.py](https://github.com/julianmachnitzke/seed-urbs/blob/main/static/functions/utils.py) from line 101 onwards).
   
 ## Further reading
   - For more insights on URBS see the official [URBS GitHub repository](https://learnpythonthehardway.org/book/appendixa.html).

@@ -669,25 +669,6 @@ WORKING_DIR = os.path.join(scripts_dir, 'urbs_master')
 
 
 
-# @app.route('/runurbs', methods=['POST'])
-# def run_urbs_script():
-#     try:
-#         # Assuming these functions clear previous results (they are not provided in the code)
-#         clear_results_folder()
-#         clear_result_txt()
-
-#         script_path = os.path.join(scripts_dir, 'urbs_master', 'run_single_year.py')
-#         subprocess.run(['python', script_path], check=True)
-
-#         message = "URBS run successfully"
-#         print(message)  # Log the success message to the console
-#         # Redirect to /urbsresults with the success message
-#         return redirect(url_for('urbsresults', message=message))
-    
-#     except subprocess.CalledProcessError as e:
-#         error_message = f"An error occurred while running the script: {e}"
-#         print(error_message)  # Log the error message to the console
-#         return error_message
 
 @app.route('/runurbs', methods=['POST'])
 def run_urbs_script():
