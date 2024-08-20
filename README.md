@@ -1,6 +1,10 @@
 # SEED Himalaya Project - URBS Website
 
-urbs is a [linear programming](https://en.wikipedia.org/wiki/Linear_programming) optimisation model for capacity expansion planning and unit commitment for distributed energy systems. Its name, latin for city, stems from its origin as a model for optimisation for urban energy systems. Since then, it has been adapted to multiple scales from neighbourhoods to continents.
+This repository contains a fully functional website that allows to run the linear programming optimization framework urbs. The data contained focuses on Northern India and the Himalayas, contributing to the [Seed Himalaya Project](https://www.wasser.tum.de/en/nexus/research-projects/seed-himalaya/). The aim of this website is to provide accessibility to the urbs framework for non-experts. The website allows a user, with little or no background knowledge and data, to run urbs. The website is self-explanatory, being based on drop-down lists, drag-and-drop, and a basic map module to select the user's location.
+
+# URBS
+
+urbs is a [linear programming](https://en.wikipedia.org/wiki/Linear_programming) optimization framework for capacity expansion planning and unit commitment for distributed energy systems. Its name, latin for city, stems from its origin as a model for the optimization of urban energy systems. Since then, it has been adapted to multiple scales from neighborhoods to continents.
 
 [![Documentation Status](https://readthedocs.org/projects/urbs/badge/?version=latest)](http://urbs.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.594200.svg)](https://doi.org/10.5281/zenodo.594200)
@@ -8,7 +12,7 @@ urbs is a [linear programming](https://en.wikipedia.org/wiki/Linear_programming)
 ## Features
 
   * urbs is a linear programming model for multi-commodity energy systems with a focus on optimal storage sizing and use.
-  * It finds the minimum cost energy system to satisfy given demand time  series for possibly multiple commodities (e.g. electricity).
+  * It finds the minimum cost energy system to satisfy the given demand time  series for possibly multiple commodities (e.g. electricity).
   * By default, operates on hourly-spaced time steps (configurable).
   * Thanks to [Pandas](https://pandas.pydata.org), complex data analysis is easy.
   * The model itself is quite small thanks to relying on package [Pyomo](http://www.pyomo.org/).
@@ -22,44 +26,42 @@ urbs is a [linear programming](https://en.wikipedia.org/wiki/Linear_programming)
 
 ## Installation
 
-There are 2 ways to get all required packages under Windows. We recommend using the Python distribution Anaconda. If you don't want to use it or already have an existing Python (version 3.6 **recommended**, 2.7 is supported as well) installation, you can also download the required packages by yourself..
+There are 2 ways to get all required packages under Windows. We recommend using the Python distribution Anaconda. If you don't want to use it or already have an existing Python (this repository was developed and tested for Python 3.8.5) installation, you can also download the required packages by yourself..
 
 ### Anaconda/Miniconda (recommended)
 
   1. **[Anaconda (Python 3)](http://continuum.io/downloads)/[Miniconda](https://docs.conda.io/en/latest/miniconda.html)**. Choose the 64-bit installer if possible.
      During the installation procedure, keep both checkboxes "modify PATH" and "register Python" selected! If only higher Python versions are available, you can switch to a specific Python Version by typing `conda install python=<version>`
   2. **Packages and Solver**: [GLPK](http://winglpk.sourceforge.net/).
-     1. Download the [environment file](add link).
+     1. Download the [environment file](https://github.com/julianmachnitzke/seed-urbs/seed_urbs.yml).
      2. Launch a new command prompt (Windows: Win+R, type "cmd", Enter)
      3. Install it via conda by `conda env create -f seed_urbs.yml`.
      4. Each time you open a new terminal for running urbs, you can activate the environment by `conda activate urbs`.
 
-Continue at [Get Started](#get-started).
 
 ### Manually (the hard way)
 
-For all packages, best take the latest release or release candidate version. Both 32 bit and 64 bit versions work, though 64 bit is recommended. The list of packages can be found in the [environment file](https://github.com/tum-ens/urbs/blob/master/urbs-env.yml).
+For all packages, best take the release as given in the environment file. The list of packages can be found in the [environment file](https://github.com/julianmachnitzke/seed-urbs/seed_urbs.yml).
   
 ## Get started
 
 ### Developers
-Once installation is complete, finally [install git (for version control)](http://git-scm.com/). **Remark:** at step "Adjusting your PATH environment", select "Run Git from the Windows Command Prompt".
-
+Once installation is complete, finally [install git (for version control)](http://git-scm.com/).
 Then, in a directory of your choice, clone this repository by:
 
-    git clone https://github.com/tum-ens/urbs.git
+    git clone https://github.com/julianmachnitzke/seed-urbs.git
     
 Continue like the users after they downloaded the zip file. 
 
 ### Users
 
-If you are not planning on developing urbs, pick the [latest release](https://github.com/tum-ens/urbs/releases) and download the zip file.
+If you are not planning on developing the website, pick the [main branch](https://github.com/julianmachnitzke/seed-urbs) and download the zip file.
 
 In the downloaded directory, open a execute the runme script by using the following on the command prompt (Windows) or Terminal (Linux). (Depending on what your standard python version is, you might need to call `python3` instead of `python`.):
  
     python runme.py
 
-Some minutes later, the subfolder `result` should contain plots and summary spreadsheets for multiple optimised energy supply scenarios, whose definitions are contained in the run script (watch out for `def scenario` lines). *Not working at the moment:* To get a graphical and tabular summary over all scenarios, execute
+Some minutes later, the subfolder `result` should contain plots and summary spreadsheets for multiple optimized energy supply scenarios, whose definitions are contained in the run script (watch out for `def scenario` lines). *Not working at the moment:* To get a graphical and tabular summary over all scenarios, execute
 
     python comp.py
 
@@ -71,15 +73,15 @@ and look at the new files `result/mimo-example-.../comparison.xlsx` and `result/
   2. Read the source code of `runme.py` and `comp.py`. 
   3. Try adding/modifying scenarios in `scenarios.py` and see their effect on results.
   4. If you need a nice python editor, think about using [PyCharm](https://www.jetbrains.com/pycharm/download). It has many features including easy Git integration, package management, etc.
-  5. Fire up IPython (`ipython3`) and run the scripts from there using the run command: `run runme` and `run comp`. Then use `whos` and inspect the workspace afterwards (`whos`). See what you can do (analyses, plotting) with the DataFrames. Take the `urbs.get_constants`, `urbs.get_timeseries` and `urbs.plot` functions as inspriation and the [Pandas docs](http://pandas.pydata.org/pandas-docs/stable/) as reference.
+  5. Fire up IPython (`ipython3`) and run the scripts from there using the run command: `run runme` and `run comp`. Then use `whos` and inspect the workspace afterward (`whos``). See what you can do (analyses, plotting) with the DataFrames. Take the `urbs.get_constants`, `urbs.get_timeseries` and `urbs.plot` functions as inspiration and the [Pandas [docs](http://pandas.pydata.org/pandas-docs/stable/) as a reference.
   
 ## Further reading
   - For more insights on URBS see the official [URBS GitHub repository](https://learnpythonthehardway.org/book/appendixa.html).
   - If you do not know anything about the command line, read [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html). Python programs are scripts that are executed from the command line, similar to MATLAB scripts that are executed from the MATLAB command prompt.
-  - If you do not know Python, try one of the following ressources:
+  - If you do not know Python, try one of the following resources:
     * The official [Python Tutorial](https://docs.python.org/3/tutorial/index.html) walks you through the language's basic features.
     * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/preface.html). It is meant for programming beginners.
-  - The book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) best summarises the capabilities of the packages installed here. It starts with IPython, then adds NumPy, slowly fades to pandas and then shows first basic, then advanced data conversion and analysis recipes. Visualisation with matplotlib is given its own chapter, both with and without pandas.
+  - The book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) best summarises the capabilities of the packages installed here. It starts with IPython, then adds NumPy, slowly fades to pandas and then shows first basic, then advanced data conversion and analysis recipes. Visualization with matplotlib is given its own chapter, both with and without pandas.
   - For a huge buffet of appetizers showing the capabilities of Python for scientific computing, I recommend browsing this [gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks).
   
 
