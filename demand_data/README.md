@@ -4,7 +4,7 @@
 This folder contains several excel spreadsheets. Each excel sheet contains a yearly timeseries of hourly energy demand for the entity corresponding to the sheet title. 
 hospital.xlsx for instance contains the energy demand required by a hospital throuhgout one year.
 
-The timeseries have been created using the [RAMP](https://ramp.pydata.org) tool. The RAMP tool was created by .. and allows to simulate energy demand timeseries
+The timeseries have been created using the [RAMP](https://github.com/RAMP-project/RAMP) tool. The RAMP tool was created by F. Lombardi et al. ([2019](https://www.sciencedirect.com/science/article/abs/pii/S0360544219307303?via%3Dihub)) and allows to simulate energy demand timeseries.
 
 Note that the data was souhgt to represent demand regimes in northern India / the Himalayas and are hence not directly transferable to other regions.
 

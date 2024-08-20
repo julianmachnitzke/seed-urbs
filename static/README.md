@@ -1,12 +1,13 @@
 # SEED Himalaya Project - URBS Website
-# /demand_data
+# /static
 
-This folder contains several excel spreadsheets. Each excel sheet contains a yearly timeseries of hourly energy demand for the entity corresponding to the sheet title. 
-hospital.xlsx for instance contains the energy demand required by a hospital throuhgout one year.
+This folder contains several .css files setting the style of the website.
 
-The timeseries have been created using the [RAMP](https://ramp.pydata.org) tool. The RAMP tool was created by .. and allows to simulate energy demand timeseries
+Additionally, the folder /static/hydrorivers contains a shapefile of the [HydroRivers](https://www.hydrosheds.org/products/hydrorivers) dataset. The shapefile contains data for rivers in the Northern India / Himalayas region. As the scope of the project is related to micro grids only rivers with an average annual discharge between 1 and 100 m³/s are considered.
 
-Note that the data was souhgt to represent demand regimes in northern India / the Himalayas and are hence not directly transferable to other regions.
+The folder /static/images contains pictures that are printed on the website as well as the graphs that are created during the process and that are then uploaded to the website.
+
+Lastly, the folder /static/functions contains some python functions in the utils.py file that are called during the operation of the website.
 
 
 ## Copyright

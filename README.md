@@ -45,27 +45,13 @@ For all packages, best take the release as given in the environment file. The li
   
 ## Get started
 
-### Developers
-Once installation is complete, finally [install git (for version control)](http://git-scm.com/).
-Then, in a directory of your choice, clone this repository by:
+To launch the website, once all required packages are installed, the user can navigate to the folder where the website is saved by typing 'cd \path\to\your\folder'. Once redirected to the correct folder the website can be launched by typing `python app.py` into the anaconda console.
+The website is now running on a local host. In a browser the website can hence be accessed by navigating to 'http://127.0.0.1:5000'.
 
-    git clone https://github.com/julianmachnitzke/seed-urbs.git
-    
-Continue like the users after they downloaded the zip file. 
 
 ### Users
 
-If you are not planning on developing the website, pick the [main branch](https://github.com/julianmachnitzke/seed-urbs) and download the zip file.
 
-In the downloaded directory, open a execute the runme script by using the following on the command prompt (Windows) or Terminal (Linux). (Depending on what your standard python version is, you might need to call `python3` instead of `python`.):
- 
-    python runme.py
-
-Some minutes later, the subfolder `result` should contain plots and summary spreadsheets for multiple optimized energy supply scenarios, whose definitions are contained in the run script (watch out for `def scenario` lines). *Not working at the moment:* To get a graphical and tabular summary over all scenarios, execute
-
-    python comp.py
-
-and look at the new files `result/mimo-example-.../comparison.xlsx` and `result/mimo-example-.../comparison.png` for a quick comparison. This script parses the summary spreadsheets for all scenarios.
 
 ## Next steps and tips
 
